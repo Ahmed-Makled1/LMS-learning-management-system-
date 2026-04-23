@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "663488381235",
+    "project_id": "lms-learning-management-ce88b",
+    "storage_bucket": "lms-learning-management-ce88b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663488381235:android:a425b160debee040b57e46",
+        "android_client_info": {
+          "package_name": "com.example.learning_management_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcM1oOgCz9iSNUySayxJgVkmR5Aa80euQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

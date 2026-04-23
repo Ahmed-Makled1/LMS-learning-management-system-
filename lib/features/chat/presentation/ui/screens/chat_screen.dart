@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learning_management_system/features/chat/data/models/message_model.dart';
 import 'package:learning_management_system/features/chat/presentation/ui/widgets/course_bubble.dart';
+import 'package:learning_management_system/features/chat/presentation/ui/widgets/message_bubble.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -13,6 +15,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
           SizedBox(
@@ -33,6 +36,24 @@ class _ChatScreenState extends State<ChatScreen> {
                     unreadMessagesCount: index,
                     courseId: index,
                     selectedCourseId: selectedCourseId,
+                  ),
+                );
+              },
+            ),
+          ),
+          SizedBox(height: 12),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return MessageBubble(
+                  message: MessageModel(
+                    message: "hello and how are you ?",
+                    sendAt: "12:00 PM",
+                    senderId: "123",
+                    senderName: "Ahmed",
+                    chatId: "123",
+                    isMe: index % 2 == 0,
                   ),
                 );
               },

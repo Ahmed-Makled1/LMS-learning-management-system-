@@ -7,5 +7,6 @@ class MessageModel extends MessageEntity {
     required super.isMe,
     required super.senderId,
     required super.chatId,
+    required super.senderName,
   });
 }
